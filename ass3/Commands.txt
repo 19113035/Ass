@@ -1,0 +1,5 @@
+export MPJ_HOME=/home/student/Downloads/mpj-v0_44 // Path
+
+javac -cp $MPJ_HOME/lib/mpj.jar DistributedSum.java
+
+$MPJ_HOME/bin/mpjrun.sh -np 6 DistributedSum
