@@ -1,0 +1,10 @@
+module CalculatorApp
+{
+    interface Calculator
+    {
+        double add(in double x, in double y);
+        double subtract(in double x, in double y);
+        double multiply(in double x, in double y);
+        double divide(in double x, in double y);
+        oneway void shutdown();
+}; };

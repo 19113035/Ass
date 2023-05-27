@@ -1,0 +1,21 @@
+Terminal 1
+
+idlj -fall Calculator.idl
+
+javac *.java
+Note: ./CalculatorApp/CalculatorPOA.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+orbd-ORBInitialPort 4000
+
+
+Terminal 2
+
+java Server-ORBInitialPort 4000 -ORBInitialHost localhost&[2] 4778
+Server ready and waiting...
+
+
+Terminal 3
+
+
+java Client-ORBInitialPort 4000 -ORBInitialHost localhost
